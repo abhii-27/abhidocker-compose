@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Artisan Coffee Roasters</title>
+    <style>
+        /* Modern Reset & Fonts */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #1b1b1b; color: #f4f4f4; line-height: 1.6; }
+
+        /* Navigation */
+        nav { background: rgba(0,0,0,0.9); padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid #3d2b1f; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #d4a373; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: #f4f4f4; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        nav ul li a:hover { color: #d4a373; }
+
+        /* Hero Header */
+        header { 
+            height: 80vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        header h1 { font-size: 4rem; color: #d4a373; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; max-width: 600px; }
+
+        /* Menu Section */
+        .container { padding: 80px 10%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #d4a373; }
+        
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .menu-item { background: #262626; padding: 20px; border-radius: 10px; border-left: 4px solid #d4a373; transition: 0.3s; }
+        .menu-item:hover { transform: translateY(-5px); background: #2d2d2d; }
+        .menu-item h3 { color: #d4a373; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .price { color: #fff; font-weight: bold; }
+        .menu-item p { font-size: 0.9rem; color: #bbb; }
+
+        /* Footer */
+        footer { background: #111; text-align: center; padding: 40px; border-top: 1px solid #3d2b1f; }
+        .footer-info { margin-bottom: 20px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">THE DAILY GRIND</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Brewed to Perfection</h1>
+        <p>Experience the finest hand-picked beans, roasted daily in small batches for the ultimate flavor.</p>
+    </header>
+
+    <section class="container" id="menu">
+        <h2 class="section-title">Our Favorites</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Caramel Macchiato <span class="price">₹280</span></h3>
+                <p>Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with caramel drizzle.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Flat White <span class="price">₹240</span></h3>
+                <p>Expertly steamed micro-foam milk poured over a double shot of our signature espresso.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Cold Brew <span class="price">₹220</span></h3>
+                <p>Steeped for 20 hours to extract the naturally sweet, chocolatey notes of our African beans.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Hazelnut Latte <span class="price">₹260</span></h3>
+                <p>Rich espresso and steamed milk flavored with sweet, nutty roasted hazelnut syrup.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-info">
+            <p>123 Coffee Lane, Espresso Valley</p>
+            <p>Open Daily: 7:00 AM - 10:00 PM</p>
+        </div>
+        <p>&copy; 2026 The Daily Grind | Premium Coffee Experience</p>
+    </footer>
+
+</body>
+</html>

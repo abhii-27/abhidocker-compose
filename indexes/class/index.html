@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi-DevOps | Learning & Deployment</title>
+    <style>
+        /* Modern DevOps Theme (Dark & Techy) */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Fira Code', 'Courier New', monospace; }
+        body { background-color: #0d1117; color: #c9d1d9; line-height: 1.6; }
+
+        /* Navigation */
+        nav { background: #161b22; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #30363d; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #58a6ff; }
+        .status-dot { height: 10px; width: 10px; background-color: #238636; border-radius: 50%; display: inline-block; margin-right: 5px; }
+
+        /* Hero Section */
+        header { 
+            padding: 100px 5%;
+            background: radial-gradient(circle at top right, #1f6feb22, transparent);
+            text-align: center;
+        }
+        header h1 { font-size: 3rem; color: #f0f6fc; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #8b949e; }
+        .highlight { color: #58a6ff; }
+
+        /* Tech Stack Grid */
+        .container { padding: 50px 5%; max-width: 1100px; margin: auto; }
+        .section-title { margin-bottom: 30px; font-size: 1.8rem; color: #f0f6fc; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .card { background: #161b22; padding: 20px; border-radius: 6px; border: 1px solid #30363d; transition: 0.3s; }
+        .card:hover { border-color: #58a6ff; transform: translateY(-5px); }
+        .card h3 { color: #58a6ff; margin-bottom: 10px; }
+        .card ul { list-style: none; font-size: 0.9rem; color: #8b949e; }
+
+        /* Pipeline Visual */
+        .pipeline-box { background: #010409; padding: 30px; border-radius: 8px; border: 1px dashed #30363d; text-align: center; margin-top: 40px; }
+        .step { display: inline-block; padding: 10px 20px; background: #238636; color: white; border-radius: 4px; margin: 5px; font-weight: bold; }
+        .arrow { color: #8b949e; font-weight: bold; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #8b949e; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ABHI-DEVOPS <span class="highlight">CLASS</span></div>
+        <div><span class="status-dot"></span> System Online</div>
+    </nav>
+
+    <header>
+        <h1>Mastering <span class="highlight">CI/CD</span> Pipelines</h1>
+        <p>Automating the future, one commit at a time.</p>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">My Learning Roadmap</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Cloud</h3>
+                <ul>
+                    <li>AWS EC2 / S3</li>
+                    <li>IAM Roles</li>
+                    <li>VPC Networking</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Automation</h3>
+                <ul>
+                    <li>Jenkins Master/Slave</li>
+                    <li>Declarative Pipelines</li>
+                    <li>Ansible Playbooks</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Containers</h3>
+                <ul>
+                    <li>Docker Multi-stage</li>
+                    <li>Docker Hub / ECR</li>
+                    <li>Kubernetes Basics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pipeline-box">
+            <h3 style="margin-bottom: 20px;">Current Deployment Pipeline</h3>
+            <span class="step">GIT CHECKOUT</span> <span class="arrow">→</span>
+            <span class="step">MAVEN BUILD</span> <span class="arrow">→</span>
+            <span class="step">DOCKERIZE</span> <span class="arrow">→</span>
+            <span class="step">HTTPD DEPLOY</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built with ❤️ inside an EC2 Instance</p>
+        <p>&copy; 2026 Abhi-DevOps Training | Continuous Learning, Continuous Improvement</p>
+    </footer>
+
+</body>
+</html>
