@@ -5,6 +5,8 @@ services:
       - '80-85:80'
     volumes:
       - './indexes/mycoffee:/usr/local/apache2/htdocs'
+    networks:
+      - 'abhi'
 
   myecom:
     image: 'httpd'
@@ -12,6 +14,8 @@ services:
       - '90-95:80'
     volumes:
       - './indexes/ecom:/usr/local/apache2/htdocs'
+    networks:
+      - 'abhi'
 
   myclass:
     image: 'httpd'
@@ -19,5 +23,24 @@ services:
       - '70-75:80'
     volumes:
       - './indexes/class:/usr/local/apache2/htdocs'
+    networks:
+      - 'abhi'
+
+  mytomcat:
+    image: 'tomcat:10'
+    ports:
+      - '8080:8080'
+    volumes:
+      - './indexes/wars:/usr/local/tomcat/webapps/'
+    networks:
+      - 'abhi'  
+
+networks:
+  abhi:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.0.0/16
+          gateway: 10.10.0.1
 
 
